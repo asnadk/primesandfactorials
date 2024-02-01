@@ -1,5 +1,8 @@
+import 'dart:io';
+
 void main() {
-  int num = 11;
+  print("enter a number");
+  int num = int.parse(stdin.readLineSync()!);
   List factors = [];
   for (int i = 1; i <= num; i++) {
     if (num % i == 0) {
